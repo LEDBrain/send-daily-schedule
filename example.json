@@ -1,0 +1,18 @@
+{
+    "of": "insert your name",
+    "email": "add your mail here",
+    "even": {
+        "1": ["PE", "another lesson", "you", "can", "add", "as", "many as you like"],
+        "2": ["1 is monday, 2 is tuesday and so on"],
+        "3": ["odd is for odd weeks, even for even"],
+        "4": [""],
+        "5": [""]
+    },
+    "odd": {
+        "1": [""],
+        "2": [""],
+        "3": [""],
+        "4": [""],
+        "5": [""]
+    }
+}
