@@ -25,7 +25,7 @@ This pretends you have an Git, Node, npm and SMTP installation!
 
 ```bash
 # This will download the repo
-$ git clone link
+$ git clone https://github.com/TeamCoffeeCodes/send-daily-schedule
 # This will change the directory to the downloaded repo
 $ cd send-daily-schedule
 # This will create a folder named 'data'
@@ -39,7 +39,7 @@ $ npm install
 (for explanations see [Linux](#Linux))
 
 ```bash
-git clone link
+git clone https://github.com/TeamCoffeeCodes/send-daily-schedule
 cd send-daily-schedule
 mkdir data
 npm install
