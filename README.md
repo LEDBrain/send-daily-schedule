@@ -12,7 +12,7 @@ What you'll need:
 What your Server needs:
 
 - Git
-(- 2 Cron-Jobs)
+- 2 Cron-Jobs or similar
 - Node (LTS)
 - npm (LTS)
 - SMTP Server
