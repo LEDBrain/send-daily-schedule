@@ -1,5 +1,7 @@
 config.js
 data/
+test.js
+*.sh
 
 # Logs
 logs

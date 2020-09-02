@@ -8,14 +8,13 @@ const DATA_DIR = 'data';
 
 const transport = nodemailer.createTransport(config.mail);
 
-toPascalCase = (string) => {
+toPascalCase = string => {
     return string.match(/[a-z]+/gi)
         .map(word => word.charAt(0).toUpperCase() + word.substr(1).toLowerCase())
         .join('');
 };
 
-const getWeek = () => {
-    const date = new Date();
+const getWeek = (date = new Date()) => {
     date.setHours(0, 0, 0, 0);
     // Thursday in current week decides the year.
     date.setDate(date.getDate() + 3 - (date.getDay() + 6) % 7);
@@ -42,11 +41,11 @@ const getData = of => {
     return cache;
 };
 
-const getSchedule = (of, dayOf = new Date().getDay()) => {
+const getSchedule = (of, dayOf = new Date()) => {
     const { even, odd } = getData(of);
-    const week = getWeek() % 2;
+    const week = getWeek(dayOf) % 2;
     const weeklySchedule = week === 1 ? odd : even;
-    const dailySchedule = weeklySchedule[`${dayOf}`]; 
+    const dailySchedule = weeklySchedule[`${dayOf.getDay()}`]; 
     return dailySchedule;
 };
 
@@ -57,11 +56,14 @@ const getNames = () => {
 
 const main = (tomorrow = undefined) => {
     const names = getNames(),
-        day = tomorrow ? new Date().getDay() + 1 : new Date().getDay();
+        date = tomorrow ? new Date() : new Date(),
+        day = tomorrow ? date.getDay() + 1 : date.getDay();
+    
+    if (day >= 6 && tomorrow) return;
     
     names.forEach(name => {
         const { email, of } = getData(name),
-            schedule = getSchedule(name, day);
+            schedule = getSchedule(name, date);
         
         send(email, 'Daily Schedule!', `<h3 style="color: black;">Your schedule for ${tomorrow ? 'tomorrow' : 'today'} ${toPascalCase(of)},</h3><p style="color:black;">${schedule.join('<br />')}</p>`);
     });
