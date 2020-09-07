@@ -56,14 +56,15 @@ const getNames = () => {
 
 const main = (tomorrow = undefined) => {
     const names = getNames(),
-        date = tomorrow ? new Date() : new Date(),
+        date = new Date(),
+        weekday = tomorrow ? date.setDate(date.getDate() + 1) : date,
         day = tomorrow ? date.getDay() + 1 : date.getDay();
     
     if (day >= 6 && tomorrow) return;
     
     names.forEach(name => {
         const { email, of } = getData(name),
-            schedule = getSchedule(name, date);
+            schedule = getSchedule(name, weekday);
         
         send(email, 'Daily Schedule!', `<h3 style="color: black;">Your schedule for ${tomorrow ? 'tomorrow' : 'today'} ${toPascalCase(of)},</h3><p style="color:black;">${schedule.join('<br />')}</p>`);
     });
