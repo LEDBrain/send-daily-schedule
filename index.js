@@ -17,11 +17,12 @@ toPascalCase = string => {
 const getWeek = (date = new Date()) => {
     date.setHours(0, 0, 0, 0);
     // Thursday in current week decides the year.
-    date.setDate(date.getDate() + 3 - (date.getDay() + 6) % 7);
+    const wdate = new Date();
+    wdate.setDate(date.getDate() + 3 - (date.getDay() + 6) % 7);
     // January 4 is always in week 1.
-    const week1 = new Date(date.getFullYear(), 0, 4);
+    const week1 = new Date(wdate.getFullYear(), 0, 4);
     // Adjust to Thursday in week 1 and count number of weeks from date to week1.
-    return 1 + Math.round(((date.getTime() - week1.getTime()) / 86400000 - 3 + (week1.getDay() + 6) % 7) / 7);
+    return 1 + Math.round(((wdate.getTime() - week1.getTime()) / 86400000 - 3 + (week1.getDay() + 6) % 7) / 7);
 };
 
 const send = async (to, subject, content) => {
@@ -57,10 +58,10 @@ const getNames = () => {
 const main = (tomorrow = undefined) => {
     const names = getNames(),
         date = new Date(),
-        weekday = tomorrow ? date.setDate(date.getDate() + 1) : date,
-        day = tomorrow ? date.getDay() + 1 : date.getDay();
+        weekday = tomorrow ? new Date(date.setDate(date.getDate() + 1)) : date,
+        day = date.getDay();
     
-    if (day >= 6 && tomorrow) return;
+    if ((day >= 6 && tomorrow) || (day === 0 && !tomorrow) return;
     
     names.forEach(name => {
         const { email, of } = getData(name),
