@@ -1,10 +1,27 @@
 {
-    "files": ["README.md"],
-    "imageSize": 100,
-    "contributorsPerLine": 7,
-    "contributorsSortAlphabetically": false,
-    "badgeTemplate": "[![All Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg?style=flat-square)](#contributors)",
-    "skipCi": "true",
-    "commitConvention": "gitmoji",
-    "contributors": []
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "contributorsPerLine": 7,
+  "contributorsSortAlphabetically": false,
+  "badgeTemplate": "[![All Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg?style=flat-square)](#contributors)",
+  "skipCi": true,
+  "commitConvention": "gitmoji",
+  "contributors": [
+    {
+      "login": "Ron31",
+      "name": "Ron31",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/30264441?v=4",
+      "profile": "https://github.com/Ron31",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
+    }
+  ],
+  "projectName": "send-daily-schedule",
+  "projectOwner": "TeamCoffeeCodes",
+  "repoType": "github",
+  "repoHost": "https://github.com"
 }
