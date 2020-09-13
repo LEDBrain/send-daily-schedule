@@ -18,6 +18,16 @@
         "code",
         "maintenance"
       ]
+    },
+    {
+      "login": "KokosnussDEV",
+      "name": "KokosnussDEV",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/42553393?v=4",
+      "profile": "https://teamcoffee.codes",
+      "contributions": [
+        "code",
+        "review"
+      ]
     }
   ],
   "projectName": "send-daily-schedule",
