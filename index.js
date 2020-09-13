@@ -58,7 +58,7 @@ const getNames = () => {
 const main = (tomorrow = undefined) => {
     const names = getNames(),
         date = new Date(),
-        weekday = tomorrow ? date.setDate(date.getDate() + 1) : date,
+        weekday = tomorrow ? new Date(date.setDate(date.getDate() + 1)) : date,
         day = tomorrow ? date.getDay() + 1 : date.getDay();
     
     if (day >= 6 && tomorrow) return;
