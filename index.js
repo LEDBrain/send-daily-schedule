@@ -61,7 +61,7 @@ const main = (tomorrow = undefined) => {
         weekday = tomorrow ? new Date(date.setDate(date.getDate() + 1)) : date,
         day = date.getDay();
     
-    if ((day >= 6 && tomorrow) || (day === 0 && !tomorrow) return;
+    if ((day >= 6 && tomorrow) || (day === 0 && !tomorrow)) return;
     
     names.forEach(name => {
         const { email, of } = getData(name),
