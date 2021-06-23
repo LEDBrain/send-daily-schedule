@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TeamCoffeeCodes/send-daily-schedule.git"
+    "url": "git+https://github.com/LEDBrain/send-daily-schedule.git"
   },
   "keywords": [],
-  "author": "TeamCoffeeCodes",
+  "author": "LEDBrain",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TeamCoffeeCodes/send-daily-schedule/issues"
+    "url": "https://github.com/LEDBrain/send-daily-schedule/issues"
   },
-  "homepage": "https://github.com/TeamCoffeeCodes/send-daily-schedule#readme",
+  "homepage": "https://github.com/LEDBrain/send-daily-schedule#readme",
   "dependencies": {
     "nodemailer": "^6.4.16"
   }

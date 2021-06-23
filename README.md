@@ -25,7 +25,7 @@ This pretends you have an Git, Node, npm and SMTP installation!
 
 ```bash
 # This will download the repo
-$ git clone https://github.com/TeamCoffeeCodes/send-daily-schedule
+$ git clone https://github.com/LEDBrain/send-daily-schedule
 # This will change the directory to the downloaded repo
 $ cd send-daily-schedule
 # This will create a folder named 'data'
@@ -39,7 +39,7 @@ $ npm install
 (for explanations see [Linux](#Linux))
 
 ```bash
-git clone https://github.com/TeamCoffeeCodes/send-daily-schedule
+git clone https://github.com/LEDBrain/send-daily-schedule
 cd send-daily-schedule
 mkdir data
 npm install
@@ -69,8 +69,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/Ron31"><img src="https://avatars0.githubusercontent.com/u/30264441?v=4" width="100px;" alt=""/><br /><sub><b>Ron31</b></sub></a><br /><a href="https://github.com/TeamCoffeeCodes/send-daily-schedule/commits?author=Ron31" title="Code">💻</a> <a href="#maintenance-Ron31" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://teamcoffee.codes"><img src="https://avatars3.githubusercontent.com/u/42553393?v=4" width="100px;" alt=""/><br /><sub><b>KokosnussDEV</b></sub></a><br /><a href="https://github.com/TeamCoffeeCodes/send-daily-schedule/commits?author=KokosnussDEV" title="Code">💻</a> <a href="https://github.com/TeamCoffeeCodes/send-daily-schedule/pulls?q=is%3Apr+reviewed-by%3AKokosnussDEV" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://github.com/Ron31"><img src="https://avatars0.githubusercontent.com/u/30264441?v=4" width="100px;" alt=""/><br /><sub><b>Ron31</b></sub></a><br /><a href="https://github.com/LEDBrain/send-daily-schedule/commits?author=Ron31" title="Code">💻</a> <a href="#maintenance-Ron31" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://teamcoffee.codes"><img src="https://avatars3.githubusercontent.com/u/42553393?v=4" width="100px;" alt=""/><br /><sub><b>KokosnussDEV</b></sub></a><br /><a href="https://github.com/LEDBrain/send-daily-schedule/commits?author=KokosnussDEV" title="Code">💻</a> <a href="https://github.com/LEDBrain/send-daily-schedule/pulls?q=is%3Apr+reviewed-by%3AKokosnussDEV" title="Reviewed Pull Requests">👀</a></td>
   </tr>
 </table>
 

@@ -20,10 +20,10 @@
       ]
     },
     {
-      "login": "KokosnussDEV",
-      "name": "KokosnussDEV",
+      "login": "kdev",
+      "name": "kdev",
       "avatar_url": "https://avatars3.githubusercontent.com/u/42553393?v=4",
-      "profile": "https://teamcoffee.codes",
+      "profile": "https://github.com/kdev",
       "contributions": [
         "code",
         "review"
@@ -31,7 +31,7 @@
     }
   ],
   "projectName": "send-daily-schedule",
-  "projectOwner": "TeamCoffeeCodes",
+  "projectOwner": "LEDBrain",
   "repoType": "github",
   "repoHost": "https://github.com"
 }
