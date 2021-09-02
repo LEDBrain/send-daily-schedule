@@ -1,3 +1,5 @@
+# IMPORTANT: This repository has been archived due to inactivity and will (for now) be no longer maintained
+
 # send-daily-schedule
 
 A tiny util to send yourself an email with your schedule.
